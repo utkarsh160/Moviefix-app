@@ -13,8 +13,9 @@ MovieFix is a mobile-friendly React web app for exploring movies by year and gen
 **Technologies:**
 - Built with React for a dynamic user interface.
 - Utilizes Intersection Observer API for efficient content loading.
-- Integrates external APIs for up-to-date movie data.
-- Responsive design for seamless cross-device functionality.
+- Integrates external APIs, including the Movie Database (TMDb) API, for up-to-date movie data.
+- Responsive design created with SCSS for flexible and modular styling.
+- Written in TypeScript for type safety and improved development experience.
 - Data retrieval optimized with debouncing.
 
 **How to Get Started:**
