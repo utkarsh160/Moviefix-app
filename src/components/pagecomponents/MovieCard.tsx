@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { fetchMovieCredits, fetchMovieDetails } from '../../api/api';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import BlankPoster from '../../assets/images/BlankPoster.png'
 

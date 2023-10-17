@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import { FaSearch } from 'react-icons/fa';
 import Logo from '../commoncomponents/Logo';
 import SearchBar from '../commoncomponents/SearchBar';
 
