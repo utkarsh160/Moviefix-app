@@ -20,5 +20,5 @@ MovieFix is a mobile-friendly React web app for exploring movies by year and gen
 **How to Get Started:**
 1. Clone the repository.
 2. Install project dependencies with `npm install`.
-3. Start the development server using `npm start`.
+3. Start the development server using `npm run dev`.
 4. Open the app in your web browser to explore movies by year, genre, and use the search feature.
