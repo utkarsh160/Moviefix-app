@@ -1,0 +1,45 @@
+@use '../../utils/' as *;
+
+.main-navbar{
+    @include flex-container(column,flex-start,flex-start);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px 40px;
+    background: #000000;
+    gap: 20px;
+
+    @include breakpoint(sm,max){
+        padding: 10px;
+    }
+    @include breakpoint(md,max){
+        padding: 10px;
+    }
+}
+
+.main-navbar-first-section{
+    @include flex-container(row,center,space-between);
+}
+
+.main-navbar-second-section{
+    @include flex-container(row,center,flex-start);
+}
+
+.main-navbar-first{
+    @include flex-container(row,center,flex-start);
+    gap: 20px;
+}
+
+
+.main-navbar-second{
+    @include flex-container(row,center,flex-end);
+    gap: 16px;
+
+    svg{
+        font-size: 32px;
+        color: #F0283C;
+    }
+}
+
+
+

@@ -1,0 +1,31 @@
+@use '../../utils/' as *;
+
+.genre-filter{
+    @include flex-container(row,flex-start,flex-start);
+    width: 100%;
+    overflow-x: auto;
+    padding: 4px 10px;
+    gap: 10px;
+    padding-bottom: 20px;
+
+    .inactive{
+        @include flex-container(row,center,center);
+        width: 100%;
+        min-width: 145px;
+        padding: 4px;
+        border-radius: 4px;
+        background: #484848;
+        cursor: pointer;
+    }
+
+    .active{
+        @include flex-container(row,center,center);
+        width: 100%;
+        min-width: 145px;
+        padding: 4px;
+        border-radius: 4px;
+        background: #F0283C; 
+        cursor: pointer;
+    }
+
+}

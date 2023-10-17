@@ -1,0 +1,13 @@
+@use '../../utils/' as *;
+
+.logo-main{
+    @include flex-container(row,center,center);
+    max-width: 200px;
+
+    @include breakpoint(sm,max){
+        max-width: 100px;
+    }
+    @include breakpoint(md,max){
+        max-width: 100px;
+    }
+}

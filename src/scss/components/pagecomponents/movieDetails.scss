@@ -1,0 +1,180 @@
+@use '../../utils/' as *;
+
+
+.movie-details-wrapper{
+    @include flex-container(column,flex-start,flex-start);
+    padding:40px 20px 8px;
+    gap: 20px;
+
+    @include breakpoint(lg,min){
+        @include flex-container(row,flex-start,flex-start);
+        gap: 40px;
+    }
+
+    h2{
+        font-size: 24px;
+        font-weight: 600;
+
+        @include breakpoint(lg,min){
+            font-size: 54px;
+        }
+    }
+}
+.movie-poster{
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @include breakpoint(lg,min){
+        width: 400px;
+    }
+}
+
+.movie-basic-details{
+    @include flex-container(column,flex-start,flex-start);
+    gap: 10px;
+}
+
+.movie-description{
+    @include flex-container(column,flex-start,flex-start);
+    gap: 10px;
+
+    span{
+        font-size: 16px;
+        font-weight: 600;  
+        color: #F0283C;
+
+        @include breakpoint(lg,min){
+            font-size: 24px;
+            line-height: 150%;
+        }
+    }
+
+    p{
+        font-size: 12px;
+        font-weight: 300;  
+
+        @include breakpoint(lg,min){
+            font-size: 20px;
+            line-height: 150%;
+        }
+    }
+}
+
+.movie-rating{
+    @include flex-container(row,center,flex-start);
+    gap: 10px;
+
+    span{
+        font-size: 16px;
+        font-weight: 600;  
+        color: #F0283C;
+
+        @include breakpoint(lg,min){
+            font-size: 24px;
+            line-height: 150%;
+        }
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 500;
+
+        @include breakpoint(lg,min){
+            font-size: 24px;
+            line-height: 150%;
+        }
+    }
+}
+
+.movie-genre{
+    @include flex-container(column,flex-start,flex-start);
+    gap: 10px;
+
+    @include breakpoint(lg,min){
+        @include flex-container(row,center,flex-start);
+        gap: 30px;
+    }
+
+    span{
+        font-size: 16px;
+        font-weight: 600;  
+        color: #F0283C;
+
+        @include breakpoint(lg,min){
+            font-size: 24px;
+            line-height: 150%;
+        }
+    }
+}
+
+.genre-block{
+    @include flex-container(row,center,center);
+    padding: 8px;
+    border-radius: 4px;
+    max-width: 150px;
+    border: 1px solid #F0283C;
+    color: #ccdcf6 !important;
+
+    @include breakpoint(lg,min){
+        max-width: 200px;
+    }
+}
+
+.movie-cast,.movie-director{
+    @include flex-container(column,flex-start,flex-start);
+    gap: 10px;
+
+    span{
+        font-size: 16px;
+        font-weight: 600;  
+        color: #F0283C;
+
+        @include breakpoint(lg,min){
+            font-size: 24px;
+            line-height: 150%;
+        }
+    }
+}
+
+.cast-card-wrapper{
+    @include flex-container(row,flex-start,flex-start);
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @include breakpoint(lg,min){
+        gap: 40px;
+    }
+}
+
+.cast-card{
+    @include flex-container(column,center,center);
+    gap: 10px;
+    max-width: 100px;
+
+    @include breakpoint(lg,min){
+        max-width: 200px;
+    }
+
+    p{
+        font-size: 12px;
+        font-weight: 400;   
+
+        @include breakpoint(lg,min){
+            font-size: 16px;
+        }
+    }
+}
+
+.cast-card-img{
+    @include flex-container(row,center,center);
+    overflow: hidden;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+
+    @include breakpoint(lg,min){
+        max-width: 200px;
+        max-height: 200px;
+    }
+}

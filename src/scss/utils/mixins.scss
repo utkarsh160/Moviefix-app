@@ -1,0 +1,49 @@
+@use '../global/breakpoints' as *;
+
+// Breakpoint mixin
+@mixin breakpoint($breakpoint, $direction: min) {
+    
+    //Check if the supplied breakpoint exists in our breakpoints map
+    @if map-has-key($breakpoints, $breakpoint) { 
+        $breakpoint-values: map-get($breakpoints, $breakpoint);
+        $breakpoint-min: map-get($breakpoint-values, min);
+        $breakpoint-max: map-get($breakpoint-values, max);
+
+        //Check if we are writing styles for larger or smaller screens
+        @if $direction == min {
+            @media (min-width: $breakpoint-min) {
+                @content;
+            }
+        }
+
+        @else {
+            @media (max-width: $breakpoint-max) {
+                @content;
+            }
+        }
+    
+    // Use the custom value if the breakpoint is not part of the pre-defined list
+    } @else {
+        
+        @if $direction == min {
+            @media (min-width: $breakpoint) {
+                @content;
+            }
+        }
+
+        @else {
+            @media (max-width: $breakpoint) {
+                @content;
+            }
+        }
+    }
+}
+
+// Flex-Container mixin
+@mixin flex-container($direction,$align-items,$justify-content){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    width: 100%;
+}
