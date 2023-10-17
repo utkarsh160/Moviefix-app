@@ -1,27 +1,24 @@
-# React + TypeScript + Vite
+**MovieFix**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MovieFix is a mobile-friendly React web app for exploring movies by year and genre. Enjoy seamless scrolling to load movies from various years and genres. Includes a powerful search function for finding movies by title and genre. Responsive design ensures a great experience on all devices, with efficient data retrieval through debouncing.
 
-Currently, two official plugins are available:
+![Movie Poster](/src/assets/images/movie-poster.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Key Features:**
+- Explore movies by year and genre with smooth scrolling.
+- Efficiently load additional content as you scroll using Intersection Observers.
+- Search for movies by title and genre, with user-friendly results.
+- Mobile-responsive design for an optimal viewing experience on smartphones and tablets.
 
-## Expanding the ESLint configuration
+**Technologies:**
+- Built with React for a dynamic user interface.
+- Utilizes Intersection Observer API for efficient content loading.
+- Integrates external APIs for up-to-date movie data.
+- Responsive design for seamless cross-device functionality.
+- Data retrieval optimized with debouncing.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**How to Get Started:**
+1. Clone the repository.
+2. Install project dependencies with `npm install`.
+3. Start the development server using `npm start`.
+4. Open the app in your web browser to explore movies by year, genre, and use the search feature.
