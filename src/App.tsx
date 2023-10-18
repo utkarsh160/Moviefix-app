@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Moviefix from './pages/Moviefix';
 import './scss/style.scss';
-import MovieDetails from './components/pagecomponents/MovieDetails';
+import MovieDetails from './pages/MovieDetails';
 
 function App() {
   return (

@@ -4,6 +4,11 @@ MovieFix is a mobile-friendly React web app for exploring movies by year and gen
 
 ![Movie Poster](/src/assets/images/movie-poster.png)
 
+**How to Get Started:**
+1. Clone the repository.
+2. Install project dependencies with `npm install`.
+3. Start the development server using `npm run dev`.
+
 **Key Features:**
 - Explore movies by year and genre with smooth scrolling.
 - Efficiently load additional content as you scroll using Intersection Observers.
@@ -18,7 +23,3 @@ MovieFix is a mobile-friendly React web app for exploring movies by year and gen
 - Written in TypeScript for type safety and improved development experience.
 - Data retrieval optimized with debouncing.
 
-**How to Get Started:**
-1. Clone the repository.
-2. Install project dependencies with `npm install`.
-3. Start the development server using `npm run dev`.

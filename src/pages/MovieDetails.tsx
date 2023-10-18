@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { fetchMovieCredits, fetchMovieDetails } from '../../api/api';
+import { fetchMovieCredits, fetchMovieDetails } from '../api/api';
 import { Link, useParams } from 'react-router-dom';
 import AvatarImage from '../../assets/images/Avatar.jpeg'
-import Logo from '../commoncomponents/Logo';
+import Logo from '../components/commoncomponents/Logo';
 import { BsArrowLeftCircle } from "react-icons/bs";
 
 interface MovieDetailsProps { }
