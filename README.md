@@ -112,12 +112,6 @@ Before you begin, ensure you have met the following requirements:
 **Known Issues and Limitations**
 - **Infinite Scrolling Issue:** The infinite scrolling functionality may not work properly in some scenarios. There might be issues related to detecting when to load more movies. This is a known limitation of the current implementation.
 
-**Key Features:**
-- Explore movies by year and genre with smooth scrolling.
-- Efficiently load additional content as you scroll using Intersection Observers.
-- Search for movies by title and genre, with user-friendly results.
-- Mobile-responsive design for an optimal viewing experience on smartphones and tablets.
-
 **Technologies:**
 - Built with React for a dynamic user interface.
 - Utilizes Intersection Observer API for efficient content loading.
