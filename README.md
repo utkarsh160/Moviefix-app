@@ -22,7 +22,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. **Movie Listing:**
    - The app must display a list of movies from The Movie Database (TMDb) API, sorted in descending order of popularity.
-   - Each movie card in the list should include the movie title, image, genre, cast, director, and a short description.(You have to click on movie card to see more information.)
+   - Each movie card in the list should include the movie title, image, genre, cast, director, and a short description.(You have to click on movie card to see more information)
 
 2. **Default Page Load State:**
    - Upon initial load, the app should display a list of 20 movies for the year 2012.
