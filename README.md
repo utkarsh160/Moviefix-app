@@ -18,96 +18,90 @@ Before you begin, ensure you have met the following requirements:
 2. Install project dependencies with `npm install`.
 3. Start the development server using `npm run dev`.
 
-### Functional Requirements
+## Functional Requirements
 
 1. **Movie Listing:**
-   - The app must display a list of movies from The Movie Database (TMDb) API, sorted in descending order of popularity.
-   - Each movie card in the list should include the movie title, image, genre, cast, director, and a short description.(You have to click on movie card to see more information)
+   - Display a list of movies from TMDb API, sorted by popularity.
+   - Show movie title, image, genre, cast, director, and short description.
 
 2. **Default Page Load State:**
-   - Upon initial load, the app should display a list of 20 movies for the year 2012.
+   - On initial load, display 20 movies from the year 2012.
 
 3. **API Integration:**
-   - The app should use the TMDb API to fetch movie data.
-   - It should utilize the `primary_release_year` filter to fetch movies of specific years.
-   - The app should sort movies by popularity score.
-   - The `vote_count.gte` parameter should be used to ensure movies have received at least 100 votes for popularity.
+   - Use TMDb API to fetch movie data.
+   - Utilize `primary_release_year` filter for specific years.
+   - Sort movies by popularity score.
+   - Ensure movies have at least 100 votes for popularity.
 
 4. **Genre Filter:**
-   - The app should provide a user interface that allows users to filter movies by genre.
-   - Genres should be fetched from the TMDb API and displayed as filter options.
-   - When users select one or more genres, the list should display only movies of the selected genres.
+   - Provide a user interface to filter movies by genre.
+   - Fetch genres from TMDb API and display them as filter options.
+   - Display movies of selected genres.
 
 5. **Search Functionality:**
-   - The app should enable users to search for movies based on specific keywords.
-   - The search results should be displayed when users enter search queries.
+   - Enable users to search for movies using keywords.
+   - Display search results.
 
 6. **Custom UI Components:**
-   - Custom UI components should be created for the app using React or a suitable JavaScript library for reusability.
+   - Create custom UI components for reusability.
 
 7. **Infinite Scrolling:**
-   - The app should continue loading more movies when the user scrolls to the end of the list in any direction (up or down).
-   - Movies from the previous or next year should be loaded based on the user's scrolling direction.
+   - Load more movies when users scroll to the list's end.
+   - Load movies from previous or next year based on scrolling direction.
 
 8. **Error Handling:**
-   - The app should have robust error handling to manage and recover from errors gracefully.
-   - Errors should be logged for debugging and troubleshooting.
+   - Handle errors gracefully and log them for debugging.
 
-### Non-Functional Requirements
+## Non-Functional Requirements
 
 1. **Performance:**
-   - The app should load quickly, with minimal latency, even when fetching and displaying large sets of movie data.
-   - Scrolling and navigation should be smooth and responsive, providing a seamless user experience.
+   - Ensure quick load times and responsive scrolling.
+   - Efficiently handle large data sets.
 
 2. **Scalability:**
-   - The app should be able to handle an increasing number of users and movie data without a significant decrease in performance.
+   - Handle increased user and data volume without performance degradation.
 
 3. **Security:**
-   - User data, such as search history or user preferences, should be stored securely and protected from unauthorized access.
-   - Ensure that API keys and sensitive information are securely stored and not exposed in client-side code.
+   - Protect user data and API keys.
+   - Store sensitive information securely.
 
 4. **Availability and Reliability:**
-   - The app should be available for users with minimal downtime.
-   - It should be reliable, with features that work as expected and minimal unexpected errors.
+   - Ensure minimal downtime and reliable features.
 
 5. **Usability:**
-   - The user interface should be intuitive and user-friendly, making it easy for users to navigate, search, and filter movies.
-   - Text and content should be readable and user-friendly, and the app should be accessible to a diverse range of users, including those with disabilities.
+   - Provide a user-friendly and intuitive interface.
+   - Ensure accessibility for diverse user needs.
 
 6. **Compatibility:**
-   - The app should be compatible with a range of web browsers and devices, ensuring that it works correctly and looks good on various screen sizes and resolutions.
+   - Make the app work across browsers and devices, adapting to various screen sizes and resolutions.
 
 7. **Maintainability:**
-   - The codebase should be well-organized and follow best practices to make it easy for developers to understand, maintain, and extend.
-   - Documentation should be comprehensive, making it easy for new developers to understand the project's structure and architecture.
+   - Keep the codebase organized and well-documented.
 
 8. **Performance Monitoring and Optimization:**
-   - Implement performance monitoring to identify bottlenecks and areas for optimization.
-   - Continuously monitor and improve the app's performance as it scales and evolves.
+   - Continuously monitor and optimize performance.
 
 9. **Data Privacy and Compliance:**
-   - The app should comply with data protection regulations and maintain user privacy.
-   - Data, including user preferences and search history, should be handled in accordance with relevant laws and best practices.
+   - Comply with data protection regulations.
+   - Secure user data and preferences.
 
 10. **Error Handling and Logging:**
-    - Implement robust error handling to gracefully manage and recover from errors.
-    - Use logging to capture and analyze errors for debugging and troubleshooting.
+    - Implement robust error handling and error logging for debugging.
 
 11. **Cross-Browser and Cross-Platform Compatibility:**
-    - The app should be tested and optimized to work consistently across various web browsers and platforms (Windows, macOS, mobile devices, etc.).
+    - Ensure consistent functionality across different platforms.
 
 12. **Load Testing:**
-    - Perform load testing to ensure the app can handle a high number of concurrent users and traffic spikes.
+    - Verify high concurrent user and traffic capacity.
 
 13. **Caching and Data Storage:**
-    - Implement appropriate caching mechanisms to improve response times and minimize unnecessary API requests.
-    - Choose suitable data storage solutions to efficiently store and retrieve movie data.
+    - Implement efficient caching and data storage solutions.
 
 14. **Deployment and Infrastructure:**
-    - Ensure a reliable and scalable hosting infrastructure to deploy and serve the application.
+    - Utilize a reliable hosting infrastructure.
 
 15. **Accessibility:**
-    - The app should be designed and tested for accessibility, ensuring that it can be used by individuals with disabilities.
+    - Design and test for accessibility.
 
 **Known Issues and Limitations**
 - **Infinite Scrolling Issue:** The infinite scrolling functionality may not work properly in some scenarios. There might be issues related to detecting when to load more movies. This is a known limitation of the current implementation.
